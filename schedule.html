@@ -6,7 +6,6 @@
   <title>Horario · Andrés Tapia</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    /* Override card width for schedule - needs more space */
     :root { --card-w: 560px; }
     body { padding: 24px 8px 80px; }
     table.schedule { font-size: 0.62rem; }
@@ -15,14 +14,11 @@
 </head>
 <body>
   <div class="card">
-
     <div class="card-header">
       <h1>Horario Semestral</h1>
       <p class="subtitle">Ingeniería en Computación · UNAM</p>
     </div>
-
     <div class="page-bar"><span class="dot"></span> Schedule</div>
-
     <div class="card-body">
       <div class="schedule-wrapper">
         <table class="schedule">
@@ -40,7 +36,7 @@
             <tr>
               <td class="hour">5:00</td>
               <td></td>
-              <td class="transport">TRANSPORTE</td>
+              <td class="transport" rowspan="2">TRANSPORTE</td>
               <td></td>
               <td></td>
               <td></td>
@@ -51,112 +47,78 @@
               <td></td>
               <td></td>
               <td></td>
-              <td></td>
             </tr>
             <tr>
               <td class="hour">7:00</td>
-              <td class="transport">TRANSPORTE</td>
-              <td></td>
-              <td class="transport">TRANSPORTE</td>
-              <td class="transport">TRANSPORTE</td>
-              <td class="transport">TRANSPORTE</td>
+              <td class="transport" rowspan="2">TRANSPORTE</td>
+              <td class="cls-service" rowspan="4">Servicio</td>
+              <td class="transport" rowspan="2">TRANSPORTE</td>
+              <td class="transport" rowspan="2">TRANSPORTE</td>
+              <td class="transport" rowspan="2">TRANSPORTE</td>
             </tr>
             <tr>
-              <td class="hour">8:59</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="hour">8:00</td>
             </tr>
             <tr>
               <td class="hour">9:00</td>
-              <td class="cls-service">Servicio</td>
               <td class="cls-service" rowspan="2">Servicio</td>
-              <td class="cls-service" rowspan="3">Servicio</td>
-              <td class="cls-teal">LAB Redes - 08<br>6598 - linea</td>
-              <td class="cls-service" rowspan="2">Servicio</td>
+              <td class="cls-service" rowspan="6">Servicio</td>
+              <td class="cls-teal" rowspan="2">LAB Redes - 08<br>6598 - linea</td>
+              <td class="cls-service" rowspan="4">Servicio</td>
             </tr>
             <tr>
-              <td class="hour">10:59</td>
-              <td class="cls-service">Servicio</td>
-              <td class="cls-teal">6598 - linea</td>
+              <td class="hour">10:00</td>
             </tr>
             <tr>
               <td class="hour">11:00</td>
-              <td class="cls-yellow">Micro - 01 L+<br>6672</td>
-              <td class="cls-green">Cripto - 02<br>2930</td>
-              <td class="cls-green">Cripto - 02<br>2930</td>
-              <td></td>
+              <td class="cls-yellow" rowspan="2">LAB Micro - 01 L+<br>6672</td>
+              <td class="cls-green" rowspan="2">Cripto - 02<br>2930</td>
+              <td class="cls-green" rowspan="2">Cripto - 02<br>2930</td>
             </tr>
             <tr>
               <td class="hour">12:00</td>
-              <td></td>
-              <td class="cls-purple">Recursos - 13<br>2080</td>
-              <td></td>
-              <td></td>
-              <td></td>
             </tr>
             <tr>
               <td class="hour">13:00</td>
-              <td class="cls-service">Servicio</td>
-              <td></td>
-              <td></td>
-              <td class="cls-service">Servicio</td>
-              <td></td>
+              <td class="cls-service" rowspan="2">Servicio</td>
+              <td class="cls-purple" rowspan="2">Recursos - 13<br>2080</td>
+              <td class="cls-service" rowspan="2">Servicio</td>
+              <td class="cls-red" rowspan="4">Ética - 12<br>1052</td>
             </tr>
             <tr>
               <td class="hour">14:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td class="cls-red" rowspan="2">Ética - 12<br>1052</td>
             </tr>
             <tr>
               <td class="hour">15:00</td>
-              <td class="cls-blue">Sistemas - 02<br>1959</td>
-              <td class="transport">TRANSPORTE</td>
-              <td class="cls-blue">Sistemas - 02<br>1959</td>
-              <td class="transport">TRANSPORTE</td>
+              <td class="cls-blue" rowspan="2">Sistemas - 02<br>1959</td>
+              <td class="transport" rowspan="2">TRANSPORTE</td>
+              <td class="cls-blue" rowspan="2">Sistemas - 02<br>1959</td>
+              <td class="transport" rowspan="2">TRANSPORTE</td>
             </tr>
             <tr>
               <td class="hour">16:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
             </tr>
             <tr>
               <td class="hour">17:00</td>
-              <td class="transport">TRANSPORTE</td>
-              <td class="cls-yellow">Micro - 05<br>1672 - linea</td>
-              <td class="transport">TRANSPORTE</td>
-              <td class="cls-yellow">Micro - 05<br>1672 - linea</td>
-              <td class="transport">TRANSPORTE</td>
+              <td class="transport" rowspan="2">TRANSPORTE</td>
+              <td class="cls-yellow" rowspan="2">Micro - 05<br>1672 - linea</td>
+              <td class="transport" rowspan="2">TRANSPORTE</td>
+              <td class="cls-yellow" rowspan="2">Micro - 05<br>1672 - linea</td>
+              <td class="transport" rowspan="2">TRANSPORTE</td>
             </tr>
             <tr>
               <td class="hour">18:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
             </tr>
             <tr>
               <td class="hour">19:00</td>
-              <td class="cls-pink">Redes - 05<br>1598 - linea</td>
-              <td class="cls-pink">Redes - 05<br>1598 - linea</td>
+              <td class="cls-pink" rowspan="2">Redes - 05<br>1598 - linea</td>
+              <td class="cls-pink" rowspan="2">Redes - 05<br>1598 - linea</td>
               <td></td>
-              <td class="cls-pink">Redes - 05<br>1598 - linea</td>
+              <td class="cls-pink" rowspan="2">Redes - 05<br>1598 - linea</td>
               <td></td>
             </tr>
             <tr>
               <td class="hour">20:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
               <td></td>
               <td></td>
             </tr>
@@ -172,21 +134,20 @@
         </table>
       </div>
 
-      <!-- Color legend -->
       <div class="info-section" style="margin-top:8px;">
-        <h3>Materias</h3>
-        <div class="tags">
-          <span class="tag" style="background:rgba(45,106,159,0.3); border-color:#2D6A9F; color:#7EC8E3;">Sistemas Op.</span>
-          <span class="tag" style="background:rgba(58,125,0,0.3); border-color:#3A7D00; color:#9BE564;">Criptografía</span>
-          <span class="tag" style="background:rgba(138,114,0,0.3); border-color:#8A7200; color:#FFE566;">Microprocesadores</span>
-          <span class="tag" style="background:rgba(139,26,26,0.3); border-color:#8B1A1A; color:#FF9494;">Ética</span>
-          <span class="tag" style="background:rgba(26,107,107,0.3); border-color:#1A6B6B; color:#6DEEEE;">Redes (Lab)</span>
-          <span class="tag" style="background:rgba(90,46,138,0.3); border-color:#5A2E8A; color:#CF94FF;">Recursos</span>
-          <span class="tag" style="background:rgba(138,32,96,0.3); border-color:#8A2060; color:#FF94CF;">Redes</span>
-        </div>
-      </div>
-
-    </div>
+         <h3>Materias</h3>
+         <div class="tags">
+           <span class="tag" style="background:rgba(45,106,159,0.3); border-color:#2D6A9F; color:#7EC8E3;">Sistemas Distribuidos</span>
+           <span class="tag" style="background:rgba(58,125,0,0.3); border-color:#3A7D00; color:#9BE564;">Criptografía</span>
+           <span class="tag" style="background:rgba(138,114,0,0.3); border-color:#8A7200; color:#FFE566;">Microprocesadores</span>
+           <span class="tag" style="background:rgba(139,26,26,0.3); border-color:#8B1A1A; color:#FF9494;">Ética</span>
+           <span class="tag" style="background:rgba(26,107,107,0.3); border-color:#1A6B6B; color:#6DEEEE;">Redes (Lab)</span>
+           <span class="tag" style="background:rgba(0,180,216,0.15); border-color:#8A7210; color:#FFE570;">Microprocesadores (Lab)</span>
+           <span class="tag" style="background:rgba(90,46,138,0.3); border-color:#5A2E8A; color:#CF94FF;">Recursos</span>
+           <span class="tag" style="background:rgba(138,32,96,0.3); border-color:#8A2060; color:#FF94CF;">Redes</span>
+         </div>
+       </div>
+     </div>
 
     <nav class="bottom-nav">
       <a href="index.html" class="nav-btn">
@@ -206,7 +167,6 @@
         CV
       </a>
     </nav>
-
   </div>
 </body>
 </html>
